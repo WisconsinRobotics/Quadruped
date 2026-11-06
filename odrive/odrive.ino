@@ -99,7 +99,6 @@ void setup() {
   Serial.print("DC current [A]: ");
   Serial.println(vbus.Bus_Current);
 
- /*
   Serial.println("Enabling closed loop control...");
   while (odrv0_user_data.last_heartbeat.Axis_State != ODriveAxisState::AXIS_STATE_CLOSED_LOOP_CONTROL) {
     odrv0.clearErrors();
@@ -117,7 +116,7 @@ void setup() {
       delay(10);
       pumpEvents(can_intf);
     }
-  }*/
+  }
 
   Serial.println("ODrive running!");
 }
